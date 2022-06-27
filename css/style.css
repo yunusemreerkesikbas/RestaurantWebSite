@@ -52,6 +52,15 @@ section{
     padding: 2rem;
 }
 
+.title{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+
+}
+
 .btn,
 .delete-btn{
     margin-top: 1rem;
@@ -179,11 +188,80 @@ section{
 
 
 
+.hero .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+    margin-bottom: 4rem;
+
+}
+.hero .slide .image{
+    flex: 1 1 40rem;
+}
+
+.hero .slide .image img{
+    width: 100%;
+}
+.hero .slide .content{
+    flex: 1 1 40rem;
+    text-align: center;
+
+}
+.hero .slide .content span {
+    font-size: 2.5rem;
+    color: var(--light-color);
+}
+.hero .slide .content h3{
+    margin: 1rem 0;
+    font-size: 6rem;
+    color: var(--black);
+    text-transform: capitalize;
+
+}
+
+.swiper-pagination-bullet-active{
+    /* hangi slaytta olduğunu gösteren küçük noktalar*/
+    background-color: var(--yellow);
+}
 
 
+.category .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items:flex-start;
+}
+.category .box-container .box{
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+}
 
+.category .box-container .box img{
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
 
+}
 
+.category .box-container .box  h3{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    color: var(--black);
+    text-transform: capitalize;
+}
+.category .box-container .box:hover{
+    background-color: var(--black);
+}
+
+.category .box-container .box:hover img{
+    filter: invert(1);
+
+}
+.category .box-container .box:hover h3{
+    color: var(--white);
+}
 
 
 
@@ -284,9 +362,16 @@ section{
     html{
        font-size: 50%;
     }
+    .title{
+        font-size: 3rem;
+    }
  
     .header .flex .logo{
        font-size: 2rem;
+    }
+    .hero .slide .content h3{
+        font-size:5rem ;
+
     }
  
    

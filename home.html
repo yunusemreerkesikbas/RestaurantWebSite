@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- header start -->
     <header class="header">
@@ -39,102 +42,234 @@
             </div>
         </section>
     </header>
-<!-- header end -->
+    <!-- header end -->
 
 
 
-<!-- hero section starts -->
+    <!-- hero section starts -->
 
-<section class="hero">
-    <div class="hero-slider">
-        <div class="w">
-            <div class="slide">
-                <div class="content">
-                    <span>order online</span>
-                    <h3>delicious pizza</h3>
-                    <a href="menu.html" class="btn"> see menus</a>
+    <section class="hero">
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>order online</span>
+                        <h3>delicious pizza</h3>
+                        <a href="menu.html" class="btn"> see menus</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-1.png" alt="">
+                    </div>
                 </div>
-                <div class="image">
-                    <img src="images/home-img-1.png" alt="">
+
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>order online</span>
+                        <h3>cheezy hamburger</h3>
+                        <a href="menu.html" class="btn"> see menus</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-2.png" alt="">
+                    </div>
                 </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>order online</span>
+                        <h3>roasted chicken</h3>
+                        <a href="menu.html" class="btn"> see menus</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-3.png" alt="">
+                    </div>
+                </div>
+
             </div>
-
-
-            <div class="slide">
-                <div class="content">
-                    <span>order online</span>
-                    <h3>cheezy hamburger</h3>
-                    <a href="menu.html" class="btn"> see menus</a>
-                </div>
-                <div class="image">
-                    <img src="images/home-img-2.png" alt="">
-                </div>
-            </div>
-
-            <div class="slide">
-                <div class="content">
-                    <span>order online</span>
-                    <h3>rosted chicke n</h3>
-                    <a href="menu.html" class="btn"> see menus</a>
-                </div>
-                <div class="image">
-                    <img src="images/home-img-3.png" alt="">
-                </div>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
-    </div>
-</section>
+    </section>
+    <!-- hero section ends -->
 
+    <!-- category section starts -->
+    <section class="category">
+        <h1 class="title">Food category</h1>
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="images/cat-1.png" alt="">
+                <h3>fast food</h3>
+            </a href="#">
 
-<!-- hero section ends -->
+            <a href="#" class="box">
+                <img src="images/cat-2.png" alt="">
+                <h3>main dishes</h3>
+            </a href="#">
 
+            <a href="#" class="box">
+                <img src="images/cat-3.png" alt="">
+                <h3>drinks</h3>
+            </a href="#">
 
-
-
-
-
-
-<!-- footer start -->
-<footer class="footer">
-
-    <section class="grid">
-        <div class="box">
-            <img src="images/email-icon.png" alt="">
-            <h3>our email</h3>
-            <a href="mailto:emre.erkesikbas@bil.omu.edu.tr">emre.erkesikbas@bil.omu.edu.tr</a>
-            <a href="mailto:20060364@stu.omu.edu.tr">20060364@stu.omu.edu.tr</a>
+            <a href="#" class="box">
+                <img src="images/cat-4.png" alt="">
+                <h3>dessert</h3>
+            </a href="#">
         </div>
+    </section>
+    <!-- category section ends -->
 
-        <div class="box">
-            <img src="images/clock-icon.png" alt="">
-            <h3>opening hours</h3>
-            <p>00:07am to 00:10pm</p>
-        </div>
 
-        <div class="box">
-            <img src="images/map-icon.png" alt="">
-            <h3>our address </h3>
-            <a href="">mumbai, india -2424</a>
-        </div>
+    <!-- home product starts -->
+    <section class="products">
+        <h1 class="title">latest dishes</h1>
+        <div class="box-container">
+            <form action="" method="post" class="box">
+                <button type="submit" class="fas fa-eye" name="quick_view"></button>
+                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+                <img src="uploaded_img/burger-1.png" alt="">
+                <a href="#" class="cat">fast food</a>
+                <div class="name">chezzy burger</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>3</div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length ==2) return false;">
+                </div>
+            
+            </form>
 
-        <div class="box">
-            <img src="images/phone-icon.png" alt="">
-            <h3>our numbers </h3>
-            <a href="tel:1235346">123-534-678</a>
-            <a href="tel:1235346">123-534-645</a>
 
+            <form action="" method="post" class="box">
+                <button type="submit" class="fas fa-eye" name="quick_view"></button>
+                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+                <img src="uploaded_img/dish-1.png" alt="">
+                <a href="#" class="cat">dishes</a>
+                <div class="name">main dish 01</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>3</div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length ==2) return false;">
+                </div>
+            
+            </form>
+
+
+            <form action="" method="post" class="box">
+                <button type="submit" class="fas fa-eye" name="quick_view"></button>
+                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+                <img src="uploaded_img/dessert-1.png" alt="">
+                <a href="#" class="cat">desserts</a>
+                <div class="name">delicious desserts</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>3</div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length ==2) return false;">
+                </div>
+            
+            </form>
+
+            <form action="" method="post" class="box">
+                <button type="submit" class="fas fa-eye" name="quick_view"></button>
+                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+                <img src="uploaded_img/drink-1.png" alt="">
+                <a href="#" class="cat">drinks</a>
+                <div class="name">cold drinks 01</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>3</div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length ==2) return false;">
+                </div>
+            
+            </form>
+
+            <form action="" method="post" class="box">
+                <button type="submit" class="fas fa-eye" name="quick_view"></button>
+                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+                <img src="uploaded_img/pizza-1.png" alt="">
+                <a href="#" class="cat">drinks</a>
+                <div class="name">delicious pizza 01</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>3</div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length ==2) return false;">
+                </div>
+            
+            </form>
+
+
+            <form action="" method="post" class="box">
+                <button type="submit" class="fas fa-eye" name="quick_view"></button>
+                <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+                <img src="uploaded_img/dish-2.png" alt="">
+                <a href="#" class="cat">dishes</a>
+                <div class="name">main dishes 02</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>3</div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length ==2) return false;">
+                </div>
+            
+            </form>
         </div>
 
     </section>
 
-    <div class="credit"> created by <span>mr.web designer</span> | all rights reserved! </div>
 
-</footer>
-<!-- footer end -->
+    <!-- home product ends -->
 
 
 
 
+
+    <!-- footer start -->
+    <footer class="footer">
+
+        <section class="grid">
+            <div class="box">
+                <img src="images/email-icon.png" alt="">
+                <h3>our email</h3>
+                <a href="mailto:emre.erkesikbas@bil.omu.edu.tr">emre.erkesikbas@bil.omu.edu.tr</a>
+                <a href="mailto:20060364@stu.omu.edu.tr">20060364@stu.omu.edu.tr</a>
+            </div>
+
+            <div class="box">
+                <img src="images/clock-icon.png" alt="">
+                <h3>opening hours</h3>
+                <p>00:07am to 00:10pm</p>
+            </div>
+
+            <div class="box">
+                <img src="images/map-icon.png" alt="">
+                <h3>our address </h3>
+                <a href="">mumbai, india -2424</a>
+            </div>
+
+            <div class="box">
+                <img src="images/phone-icon.png" alt="">
+                <h3>our numbers </h3>
+                <a href="tel:1235346">123-534-678</a>
+                <a href="tel:1235346">123-534-645</a>
+
+            </div>
+
+        </section>
+
+        <div class="credit"> created by <span>mr.web designer</span> | all rights reserved! </div>
+
+    </footer>
+    <!-- footer end -->
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+        var swiper = new Swiper(".hero-slider", {
+            loop: true,
+            grabCursor: true,
+            effect: "flip",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+        });
+    </script>
+
 </body>
+
 </html>
