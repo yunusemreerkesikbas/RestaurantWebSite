@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- header start -->
     <header class="header">
@@ -39,54 +41,94 @@
             </div>
         </section>
     </header>
-<!-- header end -->
+    <!-- header end -->
+    <div class="heading">
+        <h3>checkout</h3>
+        <p><a href="home.html">Home</a><span> / checkout </span></p>
+    </div>
+
+    <section class="checkout">
+        <h1 class="title">order summary</h1>
+        <form action="" method="post">
 
 
+            <div class="cart-items">
+                <h3>cart items</h3>
+                <p><span class="name">main dish 01</span><span class="price">$3</span></p>
+                <p><span class="name">delicious pizza 01</span><span class="price">$3</span></p>
+                <p><span class="name">delicious dessert 01</span><span class="price">$3</span></p>
+                <p class="grand-total"><span class="name"> grand-total: </span><span class="price">$9</span></p>
+                <a href="cart.html" class="btn">view cart</a>
+            </div>
+            <div class="user-info">
+                <h3>your info</h3>
+                <p><i class="fas fa-user"></i> <span>yee</span></p>
+                <p><i class="fas fa-phone"></i> <span>123456789</span></p>
+                <p><i class="fas fa-envelope"></i> <span>yee64@gmail.com</span></p>
+                <a href="update_profile.html" class="btn">update info</a>
+                <h3>your address</h3>
+                <p><i class="fas fa-map-marker-alt"></i> <span>alavardı mah gülcayir sk no:14/2</span></p>
+                <a href="update_address.html" class="btn">update address</a>
+                <select name="method" class="box" required>
+                    <option value="" disabled selected>select payment method --</option>
+                    <option value="cash on delivery">cash on delivery</option>
+                    <option value="credit cart">credit cart</option>
+                    <option value="paytm">paytm</option>
+                    <option value="paypal">paypal</option>
 
+                    
+                </select>
+                <input type="submit" value=" place order" class="btn" style="width: 100%; background:var(--red); color:var(--white)" >
+            </div>
+        </form>
 
-
-
-<!-- footer start -->
-<footer class="footer">
-
-    <section class="grid">
-        <div class="box">
-            <img src="images/email-icon.png" alt="">
-            <h3>our email</h3>
-            <a href="mailto:emre.erkesikbas@bil.omu.edu.tr">emre.erkesikbas@bil.omu.edu.tr</a>
-            <a href="mailto:20060364@stu.omu.edu.tr">20060364@stu.omu.edu.tr</a>
-        </div>
-
-        <div class="box">
-            <img src="images/clock-icon.png" alt="">
-            <h3>opening hours</h3>
-            <p>00:07am to 00:10pm</p>
-        </div>
-
-        <div class="box">
-            <img src="images/map-icon.png" alt="">
-            <h3>our address </h3>
-            <a href="">mumbai, india -2424</a>
-        </div>
-
-        <div class="box">
-            <img src="images/phone-icon.png" alt="">
-            <h3>our numbers </h3>
-            <a href="tel:1235346">123-534-678</a>
-            <a href="tel:1235346">123-534-645</a>
-
-        </div>
 
     </section>
 
-    <div class="credit"> created by <span>mr.web designer</span> | all rights reserved! </div>
 
-</footer>
-<!-- footer end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+
+        <section class="grid">
+            <div class="box">
+                <img src="images/email-icon.png" alt="">
+                <h3>our email</h3>
+                <a href="mailto:emre.erkesikbas@bil.omu.edu.tr">emre.erkesikbas@bil.omu.edu.tr</a>
+                <a href="mailto:20060364@stu.omu.edu.tr">20060364@stu.omu.edu.tr</a>
+            </div>
+
+            <div class="box">
+                <img src="images/clock-icon.png" alt="">
+                <h3>opening hours</h3>
+                <p>00:07am to 00:10pm</p>
+            </div>
+
+            <div class="box">
+                <img src="images/map-icon.png" alt="">
+                <h3>our address </h3>
+                <a href="">mumbai, india -2424</a>
+            </div>
+
+            <div class="box">
+                <img src="images/phone-icon.png" alt="">
+                <h3>our numbers </h3>
+                <a href="tel:1235346">123-534-678</a>
+                <a href="tel:1235346">123-534-645</a>
+
+            </div>
+
+        </section>
+
+        <div class="credit"> created by <span>mr.web designer</span> | all rights reserved! </div>
+
+    </footer>
+    <!-- footer end -->
 
 
 
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
