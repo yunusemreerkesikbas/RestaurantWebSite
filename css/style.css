@@ -58,8 +58,46 @@ section{
     font-size: 4rem;
     color: var(--black);
     text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
 
 }
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-flow: column;
+    background-color: var(--black);
+    min-height: 20rem;
+    /* text-decoration: underline;
+    text-underline-offset: 1rem; */
+
+
+
+}
+
+.heading h3{
+    font-size: 5rem;
+    color: var(--white);
+    text-transform: capitalize;
+}
+.heading p{
+    font-size: 2.3rem;
+    color: var(--yellow);
+}
+.heading p a{
+    color: var(--white);
+}
+.heading p a:hover{
+    text-decoration: underline;
+    color: var(--yellow);
+
+}
+
+
+
 
 .btn,
 .delete-btn{
@@ -366,6 +404,130 @@ section{
 }
 
 
+/* about section start  */
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.about .row .image{
+    flex: 1 1 40rem;
+}
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex: 1 1 40rem;
+    text-align: center;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.about .row .content p{
+    padding: 1rem 0;
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+
+/* step section start */
+.steps .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    align-items:flex-start;
+}
+.steps .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+}
+.steps .box-container .box img{
+    height: 15rem;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+
+}
+.steps .box-container .box h3{
+    font-size: 2.3rem;
+    margin: 1rem 0;
+    color: var(--black);
+    text-transform: capitalize;
+
+}
+.steps .box-container .box p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light-color);
+
+}
+
+/* step section ends */
+
+
+/* reviews start */
+
+.reviews .slide{
+    margin-bottom: 4rem;
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+}
+
+.reviews .slide img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+.reviews .slide p{
+    padding: 1.5rem 0;
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+.reviews .slide .stars{
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    border: var(--border);
+
+}
+.reviews .slide .stars i{
+    font-size: 1.8rem;
+    color: var(--yellow);
+
+}
+
+.reviews .slide h3{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    color: var(--black);
+    text-transform: capitalize;
+
+}
+
+
+
+/* reviews ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -481,7 +643,9 @@ section{
     .products .box-container{
         grid-template-columns:1fr ;
     }
- 
+    .heading h3{
+        font-size:4rem ;
+    }
    
  
  }
