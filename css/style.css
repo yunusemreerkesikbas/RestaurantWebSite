@@ -554,14 +554,34 @@ section{
     height: 15rem;
     resize: none;
 }
-
-
-
-
-
 /* contact page ends */
 
+/* search form starts */
+.search-form form{
+    display: flex;
+    gap: 1.3rem;
+}
+.search-form form .box{
+    width: 100%;
+    border: var(--border);
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);   
+}
+.search-form form .fa-search{
+    width: 6rem;
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    font-size:2.5rem ;
+}
+.search-form form .fa-search:hover{
+    background-color: var(--yellow);
+    color: var(--black);
 
+}
+
+/* search form endss */
 
 
 
